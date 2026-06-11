@@ -21,7 +21,7 @@ body {
   background:
     radial-gradient(
       circle at top left,
-      rgb(128, 88, 243, 0.25),
+      rgba(128, 88, 243, 0.25),
       transparent 300px
     ),
     radial-gradient(
@@ -152,13 +152,13 @@ body {
 .card .result-predict .after-predict {
   display: flex;
   flex-direction: column;
-  opacity: 0;
   display: none;
-  transition: all 0.5s;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
+
+
 
 .card .result-predict .after-predict .title,
 .card .result-predict .after-predict .probability {
@@ -170,11 +170,7 @@ body {
   color: blue;
 }
 
-
-
-
 /* Responsive */
-
 
 @media (max-width: 480px) {
   body {

@@ -7,7 +7,6 @@ const input = document.getElementById("inputName");
 input.addEventListener("input", function () {
   if (input.value.trim() === "") {
     result.style.display = "none";
-    result.style.opacity = "0";
 
     beforePredict.style.display = "flex";
   }
@@ -36,7 +35,6 @@ function showResult(name, gender, probability) {
   beforePredict.style.display = "none";
 
   result.innerHTML = content;
-  result.style.opacity = "1";
   result.style.display = "flex";
 }
 
