@@ -7,6 +7,7 @@ A simple web application that predicts gender based on a given name using the Ge
 This project was developed as part of a community service workshop (IBM - Intermedia Bakti Masyarakat) to introduce high school students to basic web development concepts using HTML, CSS, JavaScript, and public APIs.
 
 ## Preview
+<img width="100%" height="466" alt="Image" src="https://github.com/user-attachments/assets/63a80c5a-fa00-4a3d-8a22-15a7c0111310" />
 
 Enter a name and click the **Predict** button to see the predicted gender and confidence level.
 
