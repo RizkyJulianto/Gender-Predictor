@@ -42,7 +42,7 @@ gender-predictor/
 1. Clone this repository
 
 ```bash
-git clone https://github.com/RizkyJulianto/gender-predictor.git
+git clone https://github.com/RizkyJulianto/Gender-Predictor.git
 ```
 
 2. Open the project folder
