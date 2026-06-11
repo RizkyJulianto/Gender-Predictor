@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tebak Gender</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="badge">
+        <span>Mini Project IBM 2026</span>
+      </div>
+      <div class="title">
+        <h1>
+          Prediksi gender <br />
+          <span>berdasarkan nama</span>
+        </h1>
+      </div>
+      <div class="subtitle">
+        <p>
+          Masukkan nama depan untuk melihat prediksi gender berdasarkan data
+          yang tersedia di internet.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <form action="">
+        <div class="input-group">
+          <input type="text" placeholder="Masukan nama depan" id="inputName"/>
+          <button type="button" onclick="predict()">Prediksi</button>
+        </div>
+      </form>
+
+      <div class="result-predict">
+        <div class="before-predict" id="beforePredict">
+          <span>Menunggu Input</span>
+          <span>Masukkan nama lalu klik tombol Prediksi</span>
+        </div>
+
+        <div class="after-predict" id="result">
+           
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

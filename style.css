@@ -1,0 +1,174 @@
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Plus Jakarta Sans", sans-serif;
+  --purple: #8058f3;
+  --gray: #D9DEE8;
+}
+
+* {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgb(128, 88, 243, 0.25),
+      transparent 300px
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(128, 88, 243, 0.25),
+      transparent 300px
+    ),
+    #f8f8fc;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2.8rem 0 2.5rem;
+}
+
+.header .badge {
+    font-family: var(--secondary-font);
+    opacity: .6;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-size: 0.8rem;
+    border: 1px solid var(--gray);
+    padding: 0.5rem 1.4rem;
+    border-radius: 10pc;
+}
+
+.header .title h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    line-height: 3.5rem;
+}
+
+.header .title span {
+    color: var(--purple);
+}
+
+.header .subtitle p {
+    font-family: var(--secondary-font);
+    max-width: 500px;
+    font-size: 1rem;
+    text-align: center;
+    opacity: .7;
+    line-height: 1.7rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--gray);
+    padding: 2rem 2.5rem;
+    width: 600px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.card .input-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card .input-group input {
+    height: 3rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    border: 1px solid var(--gray);
+    width: 100%;
+    outline: none;
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+    transition: all 0.4s;
+}
+
+.card .input-group input:focus {
+    border: 1px solid var(--purple);
+}
+
+.card .input-group button {
+    padding: 0 1rem;
+    border-radius: 0.7rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--purple);
+    color: white;
+}
+
+.card .result-predict {
+    margin-top: 1.5rem;
+    background-color: #f8f8fc;
+    border: 1px solid var(--gray);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--secondary-font);
+}
+
+.card .result-predict .before-predict{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    opacity: .7;
+}
+
+.card .result-predict span:nth-child(1) {
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.card .result-predict span:nth-child(2) {
+    font-size: 0.9rem;
+}
+
+.card .result-predict .after-predict{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    display: none;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card .result-predict .after-predict .title,
+.card .result-predict .after-predict .probability{
+    opacity: .7;
+    font-weight: 500;
+}
+
+.card .result-predict .after-predict .gender {
+    color: blue;
+}
+
+
